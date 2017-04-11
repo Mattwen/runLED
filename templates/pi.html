@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="p1">
+            <b>Enter the no of row and column to create table:</b>
+            <br/><br/>
+            <table>
+                <tr>
+                    <th>No. of Row(s) </th>
+                    <th>No. of Column(s)</th>
+                </tr>
+                <tr>
+                    <td><input type="text" id="row" value="4" /> X</td>
+                    <td><input type="text" id="col" value="7" />Y</td>
+                </tr>
+            </table>
+            <br/>
+            <button id="create" onclick="create()">create table</button>
+        </p>
+        <br/><br/>
+        <input type="button" value="Reload page" onclick="reloadPage()">
+        <script>
+            function create() {
+                var row = parseInt(document.getElementById("row").value);
+                var col = parseInt(document.getElementById("col").value);
+
+                var tablestart="<table id=myTable border=1>";
+                var tableend = "</table>";
+                var trstart = "<tr bgcolor=#ff9966>";
+                var trend = "</tr>";
+                var tdstart = "<td>";
+                var tdend = "</td>";
+                var data="data in cell";
+                var str1=tablestart + trstart + tdstart + data + tdend + trend + tableend;
+                document.write(tablestart);
+
+                for (var r=0;r<row;r++) {
+                    document.write(trstart);
+                    for(var c=0; c<col; c++) {
+                        document.write(tdstart+"Row."+r+" Col."+c+tdend);
+                    }
+                }
+
+                document.write(tableend);
+                document.write("<br/>");
+                var s="<button id="+"delete"+" onclick="+"deleteTable()"+">Delete top Row </button>";
+                document.write(s);
+                var relod="<button id="+"relod"+" onclick="+"reloadPage()"+">Reload Page </button>";
+                document.write(relod);
+            }
+            function deleteTable() {
+                var dr=0;
+                if(confirm("It will be deleted..!!")) {
+                    document.getElementById("myTable").deleteRow(dr);
+                }
+            }
+            function reloadPage(){
+                location.reload();
+            }
+        </script>
+    </body>
+</html>

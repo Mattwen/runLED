@@ -1,0 +1,58 @@
+body{
+  background-image: url("../raspberry-logo.png");
+  overflow:hidden;
+}
+
+.box{
+
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.push-down{
+  padding-top: 100px;
+}
+
+.panel{
+  padding: 20px;
+}
+
+.blue{
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+}
+
+.green{
+  background-color: green;
+  width: 100px;
+  height: 100px;
+}
+
+.red{
+  background-color: red;
+  width: 100px;
+  height: 100px;
+}
+
+.orange{
+  background-color: #ff9933;
+  width: 100px;
+  height: 100px;
+}
+
+.blank{
+  background-color: white;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}
+
+a {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+.center-block {float: none !important}
