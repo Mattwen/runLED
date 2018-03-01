@@ -9,7 +9,7 @@ Control the colors and text on my Raspberry Pi display using Flask!!
       
 ![alt img](http://i.imgur.com/429Vw6T.jpg)
       
-![alt img](http://i.imgur.com/lkEBoSt.png)
+![alt img](https://i.imgur.com/VLfXBLF.png)
 
 # To do
 
