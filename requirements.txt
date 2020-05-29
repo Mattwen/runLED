@@ -31,7 +31,7 @@ pyasn1==0.1.7
 pygame==1.9.2a0
 pygobject==3.14.0
 pyserial==2.6
-python-engineio==1.0.3
+python-engineio==3.8.2.post1
 python-socketio==1.6.0
 requests==2.4.3
 sense-hat==2.2.0
